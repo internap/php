@@ -6,6 +6,8 @@
 
 FROM debian:jessie
 
+COPY sources-list /etc/apt/sources.list
+
 # persistent / runtime deps
 ENV PHPIZE_DEPS \
 		autoconf \
